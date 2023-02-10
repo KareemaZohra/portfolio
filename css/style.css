@@ -1,0 +1,143 @@
+.pieContainer {
+  height: 60vh;
+    position: relative;
+}
+.holder{
+    width: 400px;
+    margin: auto;
+    padding-top: 10vh;
+}
+@keyframes pie{
+    from{
+        transform: rotate(0turn);
+    }
+    to{transform: rotate(1turn);}
+}
+.pieBackground {
+  position: absolute;
+  width: 60vh;
+  height: 60vh;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    background-color: white
+} 
+
+.pie {
+  animation: pie 5s infinite;
+  position: absolute;
+  width: 60vh;
+  height: 60vh;
+  border-radius: 100%;
+  clip: rect(0px, 75px, 60vh, 0px);
+}
+
+.hold {
+  position: absolute;
+  width: 60vh;
+  height: 60vh;
+  border-radius: 100%;
+  clip: rect(0px, 60vh, 60vh, 75px);
+}
+
+#pieSlice1 .pie {
+  background-color: #424C6B;
+  transform:rotate(60deg);
+}
+
+#pieSlice2 {
+  transform: rotate(60deg);
+}
+
+#pieSlice2 .pie {
+  background-color: #A3BE9D;
+  transform: rotate(60deg);
+}
+
+#pieSlice3 {
+  transform: rotate(120deg);
+}
+
+#pieSlice3 .pie {
+  background-color: #B79478;
+  transform: rotate(60deg);
+}
+
+#pieSlice4 {
+  transform: rotate(180deg);
+}
+
+#pieSlice4 .pie {
+  background-color: #5E9097;
+  transform: rotate(60deg);
+}
+
+#pieSlice5 {
+  transform: rotate(240deg);
+}
+
+#pieSlice5 .pie {
+  background-color: #B79377;
+  transform: rotate(60deg);
+}
+
+#pieSlice6 {
+  transform: rotate(300deg);
+}
+
+#pieSlice6 .pie {
+  background-color: #D1C49A;
+  transform: rotate(60deg);
+}
+
+body{
+    background-image: url(../img/sea.jpg);
+    background-repeat: repeat;
+}
+.innerCircle {
+  position: absolute;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 100%;
+  top: 8vh;
+  left: 8vh; 
+  color: white;
+}
+.innerCircle .content {
+  position: absolute;
+  display: block;
+  width: 45vh;
+/*  top: 30px;*/
+  left: 0;
+  text-align: center;
+  font-size: 14px;
+}
+.innerCircle .content img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.pie{
+    text-align: center;
+    font-size: 3em;
+}
+.new{
+    margin-top: 30px;
+    text-align: center;
+}
+.awesome{
+    font-family: 'Lacquer', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+canvas{
+    height: 100vh!important;
+    width: 100%!important;
+}
+
+
+
+
+
+
+

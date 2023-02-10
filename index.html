@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e65bf7355.js" crossorigin="anonymous"></script>
+</head>
+<body class="demo">
+   <div class="holder">
+    <div class="pieContainer">
+      <div class="pieBackground"></div>
+      <div id="pieSlice1" class="hold"><div class="pie">hello</div></div>
+      <div id="pieSlice2" class="hold"><div class="pie"></div></div>
+      <div id="pieSlice3" class="hold"><div class="pie"></div></div>
+      <div id="pieSlice4" class="hold"><div class="pie"></div></div>
+      <div id="pieSlice5" class="hold"><div class="pie"></div></div>
+      <div id="pieSlice6" class="hold"><div class="pie">hello</div></div>
+      <div class="innerCircle">
+          <div class="content">
+              <img src="img/pp.jpg">
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="new">
+       <a href="https://kareema.xyz/" class="awesome">load awesomeness <i class="fas fa-external-link-alt"></i> </a> 
+    </div>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/jquery.ripples-min.js"></script>
+    <script type="text/javascript">
+        $('.demo').ripples({
+
+  // Image Url
+  imageUrl: null,
+
+  // The width and height of the WebGL texture to render to. 
+  // The larger this value, the smoother the rendering and the slower the ripples will propagate.
+  resolution: 1000,
+
+  // The size (in pixels) of the drop that results by clicking or moving the mouse over the canvas.
+  dropRadius: 10,
+
+  // Basically the amount of refraction caused by a ripple. 
+  // 0 means there is no refraction.
+  perturbance: 0.4,
+
+  // Whether mouse clicks and mouse movement triggers the effect.
+  interactive: true,
+
+  // The crossOrigin attribute to use for the affected image. 
+  crossOrigin: ''
+  
+});
+    </script>
+</body>
+</html>

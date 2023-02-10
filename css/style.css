@@ -134,9 +134,13 @@ canvas{
     height: 100vh!important;
     width: 100%!important;
 }
-
-
-
+.main{
+  height: 100px;
+    width: 600px;
+    margin: auto;
+    padding-top: 300px;
+    font-size: 26px;
+}
 
 
 
